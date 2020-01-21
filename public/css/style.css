@@ -1,0 +1,97 @@
+.list-employes {
+	border: 4px  black;
+	background: #BDBDBD;
+	color: #2E2EFE;
+	padding: 15px;
+	margin: 15px 15px 15px 15px;
+}
+
+
+/*--------error-page----------*/
+.Error-found {
+	padding-top: 14em;
+	background: #fff;
+	min-height: 800px;
+}
+.error-page {
+	margin-top: 2em;
+}
+.error-page h3 img {
+	width: 21%;
+}
+.error-page h3 {
+	font-weight: 500;
+	text-transform: uppercase;
+	color:#5F601E;
+	margin: 0;
+	padding: 0 0 0em 0;
+	font-size: 19em;
+}
+.error-page h3 span {
+	color: #E16C5B;
+}
+.error-page p{
+	font-weight:100;
+	font-size:2.5em;
+	color: #666;
+	font-family: 'Opensan', sans-serif;
+	margin-top:0.6em;
+}
+a.home-btn:hover {
+	border-color: #c1061b;
+	color: #c1061b;
+}
+a.button.curl-bottom-right.two{
+	padding: 1em 1em;
+	width: 15%;
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #ff0000;
+}
+/* Curl Bottom Right */
+.curl-bottom-right {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  background:#faed23;
+  padding: 0.7em 1.8em;
+  color: #FFF;
+	font-size: 1em;
+	font-family: 'Opensan', sans-serif;
+	width: 25%;
+	font-weight:400;
+	text-transform: uppercase;
+	text-decoration:none;
+	margin-top: 1em;
+}
+a.button.curl-bottom-right{
+	text-decoration: none;
+}
+a.button.curl-bottom-right:hover{
+	color:#ff0000;
+}
+.curl-bottom-right:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  bottom: 0;
+  right: 0;
+  background:#f7ec13;
+  /* IE9 */
+  background: linear-gradient(315deg,#fff 45%, #faed23 50%, #faed23 56%,#faed23 80%);
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+  text-decoration: none;
+}
+.curl-bottom-right:hover:before, .curl-bottom-right:focus:before, .curl-bottom-right:active:before {
+  width: 25px;
+  height: 25px;
+}
+/*--------error-page-ends----------*/

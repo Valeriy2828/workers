@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.0.1
+- https://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3306
+- Время создания: Янв 21 2020 г., 09:15
+- Версия сервера: 10.3.13-MariaDB-log
+- Версия PHP: 7.1.32
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="worker" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="departments">
+                CREATE TABLE `departments` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `created_at` timestamp NULL DEFAULT NULL,
+                  `updated_at` timestamp NULL DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+            <pma:table name="employes">
+                CREATE TABLE `employes` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `birthday` date NOT NULL,
+                  `position` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `type` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `payment` int(11) DEFAULT NULL,
+                  `hours` int(11) DEFAULT NULL,
+                  `department_id` int(11) NOT NULL,
+                  `created_at` timestamp NULL DEFAULT NULL,
+                  `updated_at` timestamp NULL DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'worker'
+    -->
+    <database name="worker">
+        <!-- Таблица departments -->
+        <table name="departments">
+            <column name="id">1</column>
+            <column name="name">Менеджмент</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="departments">
+            <column name="id">2</column>
+            <column name="name">Поставки</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="departments">
+            <column name="id">3</column>
+            <column name="name">Кухня</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <!-- Таблица employes -->
+        <table name="employes">
+            <column name="id">1</column>
+            <column name="name">Вася</column>
+            <column name="birthday">2008-10-23</column>
+            <column name="position">уборщик</column>
+            <column name="type">rate</column>
+            <column name="payment">5000</column>
+            <column name="hours">0</column>
+            <column name="department_id">2</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">2</column>
+            <column name="name">Петя</column>
+            <column name="birthday">2008-10-23</column>
+            <column name="position">тестировщик</column>
+            <column name="type">rate</column>
+            <column name="payment">6000</column>
+            <column name="hours">0</column>
+            <column name="department_id">1</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">3</column>
+            <column name="name">Федя</column>
+            <column name="birthday">2008-10-23</column>
+            <column name="position">менеджер среднего звена</column>
+            <column name="type">hours</column>
+            <column name="payment">12</column>
+            <column name="hours">160</column>
+            <column name="department_id">1</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">4</column>
+            <column name="name">Сергей</column>
+            <column name="birthday">2008-10-23</column>
+            <column name="position">грузчик</column>
+            <column name="type">rate</column>
+            <column name="payment">4000</column>
+            <column name="hours">0</column>
+            <column name="department_id">1</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">5</column>
+            <column name="name">Николай</column>
+            <column name="birthday">2008-10-23</column>
+            <column name="position">маг 12-го уровня</column>
+            <column name="type">hours</column>
+            <column name="payment">70</column>
+            <column name="hours">240</column>
+            <column name="department_id">2</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">6</column>
+            <column name="name">Виталий</column>
+            <column name="birthday">2007-10-09</column>
+            <column name="position">грузчик</column>
+            <column name="type">rate</column>
+            <column name="payment">10000</column>
+            <column name="hours">NULL</column>
+            <column name="department_id">1</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">7</column>
+            <column name="name">Савелий</column>
+            <column name="birthday">1987-11-09</column>
+            <column name="position">менеджер</column>
+            <column name="type">hours</column>
+            <column name="payment">70</column>
+            <column name="hours">200</column>
+            <column name="department_id">2</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">8</column>
+            <column name="name">Петр</column>
+            <column name="birthday">1978-01-01</column>
+            <column name="position">верстальщик</column>
+            <column name="type">hours</column>
+            <column name="payment">100</column>
+            <column name="hours">100</column>
+            <column name="department_id">1</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">9</column>
+            <column name="name">Николай</column>
+            <column name="birthday">1978-12-12</column>
+            <column name="position">программист</column>
+            <column name="type">rate</column>
+            <column name="payment">9000</column>
+            <column name="hours">NULL</column>
+            <column name="department_id">2</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">10</column>
+            <column name="name">Банзай</column>
+            <column name="birthday">1967-08-06</column>
+            <column name="position">слесарь</column>
+            <column name="type">rate</column>
+            <column name="payment">7000</column>
+            <column name="hours">NULL</column>
+            <column name="department_id">1</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">11</column>
+            <column name="name">Аркадий</column>
+            <column name="birthday">2007-10-09</column>
+            <column name="position">повар</column>
+            <column name="type">hours</column>
+            <column name="payment">40</column>
+            <column name="hours">300</column>
+            <column name="department_id">3</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">12</column>
+            <column name="name">Семен</column>
+            <column name="birthday">2001-10-09</column>
+            <column name="position">посудомойщик</column>
+            <column name="type">hours</column>
+            <column name="payment">50</column>
+            <column name="hours">200</column>
+            <column name="department_id">3</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+        <table name="employes">
+            <column name="id">13</column>
+            <column name="name">Пересвет</column>
+            <column name="birthday">1979-03-04</column>
+            <column name="position">официант</column>
+            <column name="type">rate</column>
+            <column name="payment">8500</column>
+            <column name="hours">NULL</column>
+            <column name="department_id">3</column>
+            <column name="created_at">NULL</column>
+            <column name="updated_at">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>
